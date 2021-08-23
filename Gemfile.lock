@@ -85,10 +85,11 @@ GEM
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
       railties (>= 3.2)
-    erubi (1.10.0)
-    ffi (1.15.3)
-    globalid (0.5.2)
-      activesupport (>= 5.0)
+    erubi (1.9.0)
+    ffi (1.13.1)
+    ffi (1.13.1-x64-mingw32)
+    globalid (0.4.2)
+      activesupport (>= 4.2.0)
     gon (6.4.0)
       actionpack (>= 3.0.20)
       i18n (>= 0.7)
@@ -105,14 +106,21 @@ GEM
       mini_mime (>= 0.1.1)
     marcel (1.0.1)
     method_source (1.0.0)
-    mini_mime (1.1.1)
-    minitest (5.14.4)
-    msgpack (1.4.2)
+    mimemagic (0.3.5)
+    mini_mime (1.0.2)
+    mini_portile2 (2.4.0)
+    minitest (5.14.2)
+    msgpack (1.3.3)
+    msgpack (1.3.3-x64-mingw32)
     multi_json (1.15.0)
-    nio4r (2.5.8)
-    nokogiri (1.12.3-arm64-darwin)
-      racc (~> 1.4)
+    nio4r (2.5.4)
+    nokogiri (1.10.10)
+      mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.10-x64-mingw32)
+      mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    pg (1.2.3)
+    pg (1.2.3-x64-mingw32)
     public_suffix (4.0.6)
     puma (4.3.8)
       nio4r (~> 2.0)
@@ -176,8 +184,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
-    thor (1.1.0)
+    thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -208,7 +215,7 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  arm64-darwin-20
+  ruby
   x64-mingw32
 
 DEPENDENCIES
@@ -220,11 +227,11 @@ DEPENDENCIES
   dotenv-rails (~> 2.7, >= 2.7.6)
   gon (~> 6.1)
   jbuilder (~> 2.7)
+  pg
   puma (~> 4.1)
   rails (~> 6.0.4, >= 6.0.4.1)
   sass-rails (>= 6)
   selenium-webdriver
-  sqlite3 (~> 1.4)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)

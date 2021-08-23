@@ -7,8 +7,10 @@ ruby '3.0.1'
 gem 'rails', '~> 6.0.4', '>= 6.0.4.1'
 # Use devise for Auth
 gem 'devise'
+# Use postgres as the database for Active Record
+gem 'pg'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+#gem 'sqlite3', '~> 1.4'
 # To read .env files
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
 # Use Puma as the app server

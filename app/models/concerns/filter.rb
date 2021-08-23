@@ -20,7 +20,7 @@ module Filter
       columns = self.column_names
       @return = self.where(
           columns
-              .map {|c| "#{c} like :search" }
+              .map {|c| "cast(#{c} as text) like :search" }
               .join(' OR '),
           search: "%#{search}%"
       )
