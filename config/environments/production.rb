@@ -3,7 +3,11 @@ Rails.application.configure do
 
   # Code is not reloaded between requests.
   config.cache_classes = true
-
+  # docker yarn fix
+  config.webpacker.check_yarn_integrity = false
+  # heroku fix
+  config.hosts << ENV['POSTGRES_HOST']
+  # for password reset
   config.action_mailer.smtp_settings = {
       address: "smtp.gmail.com",
       port: 587,
