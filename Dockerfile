@@ -3,7 +3,7 @@ FROM ruby:3.0.1
 
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
 WORKDIR /myapp
-COPY config myapp/config/
+COPY . /myapp/.
 RUN bundle install
 
 # Add a script to be executed every time the container starts.
