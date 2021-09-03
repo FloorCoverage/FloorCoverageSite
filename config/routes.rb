@@ -6,7 +6,11 @@ Rails.application.routes.draw do
   }
   root "welcome#index"
   get "/users/edit", to: "users#edit"
+  get "/welcome/test"
 
+   
+
+  
   resources :roles
   resources :employees
   resources :shifts

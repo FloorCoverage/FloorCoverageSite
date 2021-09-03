@@ -30,12 +30,8 @@
   </div>
 
   <div id='login-right'>
-    <div id='static_calendar'></div>
-    <br />
-    <%= form_tag '', method: 'get' do %>
-      <%= label_tag(:query, "Enter calendar ID: ") %>
-      <%= text_field_tag :search, params[:search] %>
-      <%= submit_tag "search" %>
-    <% end %>
-  </div>
+  
+  <%= render 'layouts/searchbar', locals: { msg: "Enter Calendar ID:" } %>
+  <div id='static_calendar'></div>
+  
 </span>
