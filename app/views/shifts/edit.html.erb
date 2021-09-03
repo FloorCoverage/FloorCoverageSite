@@ -3,4 +3,4 @@
 <%= render 'form', shift: @shift %>
 
 <%= link_to 'Delete Shift', @shift, method: :delete, data: { confirm: "Are you sure you want to delete this shift?" } %> |
-<%= link_to 'Back', shifts_path %>
+<%= link_to 'Back', shifts_path, method: :get %>
