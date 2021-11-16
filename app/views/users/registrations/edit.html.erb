@@ -1,9 +1,7 @@
-<h3>Sharable ID: <%= current_user.id%></h3>
-<h3>Sharable ID: <%= generate_token %></h3>
-
+<h3>Sharable ID:</h3>
 
 <textarea id="clipboard-btn">
-hello world
+<%= generate_token %>
 </textarea>
 
 <%= button_tag 'Copy to clipboard', type: 'button', onClick: 'cpyToClip()'%>
