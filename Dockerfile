@@ -11,13 +11,13 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 RUN apt-get update -y
 
 # Install Yarn
-RUN apt-get install yarn -y
+RUN apt-get install yarn -y 
 
 WORKDIR /myapp
 COPY . /myapp/.
 RUN bundle install
 
-RUN yarn install 
+RUN yarn install --ignore-engines 
 
 RUN rails webpacker:install
 
