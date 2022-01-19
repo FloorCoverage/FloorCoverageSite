@@ -51,8 +51,6 @@ yarn-debug.log*
 .yarn-integrity
 yarn.lock
 
-# heroku yarn fix https://stackoverflow.com/a/61685846/11379938
-package-lock.json
 
 .idea
 .env
