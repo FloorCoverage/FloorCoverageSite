@@ -11,7 +11,7 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 RUN apt-get update -y
 
 # Install Yarn
-RUN apt-get install yarn -y
+RUN apt-get install yarn -y --ignore-engines
 
 WORKDIR /myapp
 COPY . /myapp/.
