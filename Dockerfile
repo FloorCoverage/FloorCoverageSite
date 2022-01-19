@@ -17,7 +17,7 @@ WORKDIR /myapp
 COPY . /myapp/.
 RUN bundle install
 
-RUN yarn install 
+RUN yarn install --ignore-engines
 
 RUN rails webpacker:install
 
