@@ -1,13 +1,14 @@
 # frozen_string_literal: true
+include UsersHelper
 
 class Users::SessionsController < Devise::SessionsController
-  # before_action :configure_sign_in_params, only: [:create]
+  # before_action :configure_sign_in_params, only: [:create]  
 
   # GET /resource/sign_in
   def new
     super do |resource|
 
-      @shifts = Shift.where(user_id: params[:search])
+      @shifts = Shift.where(user_id: match_token(params[:search]))
 
       gon.static_events = @shifts.joins(:employee, :role).each_with_object([]) do |shift, event|
         _title = shift.title.empty? ? "" : "#{shift.title}:  "
