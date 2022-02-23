@@ -30,8 +30,48 @@
   </div>
 
   <div id='login-right'>
+
+  <div id="id01" class="is-active">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <!-- Any other Bulma elements you want -->
+    <div class="card">
+      <div class="card-content">
+        <div class="content">
+          
+          Welcome to floor Coverage!
+          This website allows you to manage your employees in the cloud.
+          Do you want to test it out? Here is what you have to do ...
+          <br/>
+          <ul>
+            <li>Step 1: log in with the following Credentials.
+            <br/><br/>
+            Username: user1@email.com
+            <br/>
+            Password: Pass1!
+            <br/><br/>
+            <li>Step 2: browse the tabs and edit as you wish.
+            <li>Step 3: go to your account and copy the sharable token.
+            <li>Step 4: log out and paste the token in the search bar
+          </ul>
+          <br/>
+          And VOILÀ! it is as simple as that.
+          Do you like this site? feel free to create an account and use it as you desire free of charge.
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="modal-close is-large" aria-label="close" onclick="document.getElementById('id01').classList='modal'"></button>
+</div>
+
+
   
   <%= render 'layouts/searchbar', locals: { msg: "Enter Calendar ID:" } %>
   <div id='static_calendar'></div>
+
+  
+   
   
 </span>
+
